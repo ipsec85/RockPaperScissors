@@ -1,17 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/jpeg" href="img/rock-paper-scissors-icon-5.jpeg"/>
+    <link rel="icon" type="image/jpeg" href="img/rock-paper-scissors-icon-5.jpeg" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Rock, Paper, Scissors</title>
-    
+
 </head>
+
 <body>
 
+    <header>
+        Rock, Paper, Scissors
+    </header>
+    <div class="container">
+
+        <div id="gameplay">
+            <div id="playerScore">
+                <div class="thrown-player">
+                    <!-- <i class="far fa-hand-rock fa-3x player-hiding"></i> -->
+                    <i class="far fa-hand-rock fa-3x player-hiding" id="playerSign"></i>
+                </div>
+                <h3>Player Score</h3>
+                <p class="playerCurrentScore">0</p>
+            </div>
+
+            <div>
+                <p id="outCome">Computer threw Paper. Computer wins this round.</p>
+            </div>
+
+            <div id="computerScore">
+                <div class="thrown-computer">
+                    <i class="far fa-hand-rock fa-3x computer-hiding" id="computerSign"></i>
+                </div>
+                <h3>Computer Score</h3>
+                <p class="computerCurrentScore">0</p>
+            </div>
+        </div>
+
+        <h2>Player, make your choice:</h2>
+
+        <div class="player">
+
+            <button class="throw rock">
+                <i class="far fa-hand-rock fa-3x" ></i>
+            </button>
+            <button class="throw paper">
+                <i class="far fa-hand-paper fa-3x" ></i>
+            </button>
+            <button class="throw scissors">
+                <i class="far fa-hand-scissors fa-3x" ></i>
+            </button>
+        </div>
+        
+    </div>
     <script src="app.js"></script>
-    
 </body>
+
 </html>
